@@ -9,7 +9,7 @@ import static org.junit.internal.matchers.ThrowableMessageMatcher.hasMessage;
 import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.StringDescription;
-import org.junit.AssumptionViolatedException;
+import org.junit.AssumptionViolatedExceptionJr;
 import org.junit.runners.model.Statement;
 
 /**
@@ -72,7 +72,7 @@ import org.junit.runners.model.Statement;
  * public ExpectedException thrown = ExpectedException.none();</pre>
  *
  * <h3>AssumptionViolatedExceptions</h3>
- * <p>JUnit uses {@link AssumptionViolatedException}s for indicating that a test
+ * <p>JUnit uses {@link AssumptionViolatedExceptionJr}s for indicating that a test
  * provides no useful information. (See {@link org.junit.Assume} for more
  * information.) You have to call {@code assume} methods before you set
  * expectations of the {@code ExpectedException} rule. In this case the rule

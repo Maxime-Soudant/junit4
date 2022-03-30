@@ -9,10 +9,12 @@ public class Version {
 	}
 
 	public static String id() {
-		return "4.13.3-SNAPSHOT";
+	    final String ID = "4.13.3-SNAPSHOT";
+		return ID;
 	}
 	
 	public static void main(String[] args) {
 		System.out.println(id());
+	    //logger.log(id());
 	}
 }

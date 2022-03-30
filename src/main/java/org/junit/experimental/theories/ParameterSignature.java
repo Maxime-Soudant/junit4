@@ -15,7 +15,7 @@ public class ParameterSignature {
     private static final Map<Class<?>, Class<?>> CONVERTABLE_TYPES_MAP = buildConvertableTypesMap();
     
     private static Map<Class<?>, Class<?>> buildConvertableTypesMap() {
-        Map<Class<?>, Class<?>> map = new HashMap<Class<?>, Class<?>>();
+        Map<Class<?>, Class<?>> map = new HashMap<>();
 
         putSymmetrically(map, boolean.class, Boolean.class);
         putSymmetrically(map, byte.class, Byte.class);
@@ -34,7 +34,7 @@ public class ParameterSignature {
         map.put(b, a);
     }
     
-    public static ArrayList<ParameterSignature> signatures(Method method) {
+    public static List<ParameterSignature> signatures(Method method) {
         return signatures(method.getParameterTypes(), method
                 .getParameterAnnotations());
     }

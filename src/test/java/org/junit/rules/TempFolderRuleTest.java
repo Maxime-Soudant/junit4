@@ -22,7 +22,7 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 import org.junit.After;
-import org.junit.AssumptionViolatedException;
+import org.junit.AssumptionViolatedExceptionJr;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -213,7 +213,7 @@ public class TempFolderRuleTest {
             }
             return convertedPermissions;
         } catch (Exception e) {
-            throw new AssumptionViolatedException("Test requires at least Java 1.7", e);
+            throw new AssumptionViolatedExceptionJr("Test requires at least Java 1.7", e);
         }
     }
 

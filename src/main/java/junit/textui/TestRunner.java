@@ -58,7 +58,7 @@ public class TestRunner extends BaseTestRunner {
     /**
      * Runs a suite extracted from a TestCase subclass.
      */
-    static public void run(Class<? extends TestCase> testClass) {
+    public static void run(Class<? extends TestCase> testClass) {
         run(new TestSuite(testClass));
     }
 
@@ -72,7 +72,7 @@ public class TestRunner extends BaseTestRunner {
      * }
      * </pre>
      */
-    static public TestResult run(Test test) {
+    public static TestResult run(Test test) {
         TestRunner runner = new TestRunner();
         return runner.doRun(test);
     }
@@ -81,7 +81,7 @@ public class TestRunner extends BaseTestRunner {
      * Runs a single test and waits until the user
      * types RETURN.
      */
-    static public void runAndWait(Test suite) {
+    public static void runAndWait(Test suite) {
         TestRunner aTestRunner = new TestRunner();
         aTestRunner.doRun(suite, true);
     }
@@ -128,6 +128,7 @@ public class TestRunner extends BaseTestRunner {
         try {
             System.in.read();
         } catch (Exception e) {
+            return;
         }
     }
 

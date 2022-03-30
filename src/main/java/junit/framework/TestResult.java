@@ -22,9 +22,9 @@ public class TestResult {
     private boolean fStop;
 
     public TestResult() {
-        fFailures = new ArrayList<TestFailure>();
-        fErrors = new ArrayList<TestFailure>();
-        fListeners = new ArrayList<TestListener>();
+        fFailures = new ArrayList<>();
+        fErrors = new ArrayList<>();
+        fListeners = new ArrayList<>();
         fRunTests = 0;
         fStop = false;
     }
@@ -69,7 +69,7 @@ public class TestResult {
      * Returns a copy of the listeners.
      */
     private synchronized List<TestListener> cloneListeners() {
-        List<TestListener> result = new ArrayList<TestListener>();
+        List<TestListener> result = new ArrayList<>();
         result.addAll(fListeners);
         return result;
     }

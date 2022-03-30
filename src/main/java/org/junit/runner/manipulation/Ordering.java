@@ -37,7 +37,7 @@ public abstract class Ordering {
 
             @Override
             protected List<Description> orderItems(Collection<Description> descriptions) {
-                List<Description> shuffled = new ArrayList<Description>(descriptions);
+                List<Description> shuffled = new ArrayList<>(descriptions);
                 Collections.shuffle(shuffled, random);
                 return shuffled;
             }

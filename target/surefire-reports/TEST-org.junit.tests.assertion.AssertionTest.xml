@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.junit.tests.assertion.AssertionTest" time="0.006" tests="98" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.2+0"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/maximesoudant/Documents/Cours/Licence/S6/GL/junit4"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/maximesoudant/Documents/Cours/Licence/S6/GL/junit4"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.2+0"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/jv/njpq7qs14pq6qpg84v5v6qjr0000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/maximesoudant/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="12.2.1"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/maximesoudant"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="maximesoudant"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.4/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/17.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.2"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.4/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="floatsNotEqualWithoutDelta" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="notEqualsNullWithObjectWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="sameNullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="charsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalArraysDifferentLengthMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullToString" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="stringsDifferWithUserMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="objectsWithDifferentReferencesAreNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="failWithNoMessageToString" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="floatsNotDoublesInArrays" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThatIncludesDescriptionOfTestedValueInErrorMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferAtElement0withMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsIncludesAnInformativeDefaultMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysWithNullElementEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="failWithMessageToString" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="IntegerDoesNotEqualLong" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="shortsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferAtElement1withMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="objectsNotEquals" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalIntArraysAreEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="oneDimensionalBooleanArraysAreNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="equals" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="objectsAreSame" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="implicitTypecastEquality" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="oneDimensionalFloatArraysAreNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="oneDimensionalPrimitiveArraysAreEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsRequiresAnExceptionToBeThrown" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="notSameWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysElementsDiffer" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="oneDimensionalDoubleArraysAreNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="bytesNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalArraysDifferentLengthNoMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="primitiveArraysConvertedToStringCorrectly" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="intsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalArraysAreEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsWrapsAndPropagatesUnexpectedExceptions" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferentLengthDifferingAtEndAndExpectedArrayLongerMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferAtElement0nullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsUsesCanonicalNameUponTypeMismatch" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysNotEqualWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThatIncludesAdvancedMismatch" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferAtElement1nullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0.001"/>
+  <testcase name="notEqualsNullWithObject" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="compareBigDecimalAndInteger" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysEqualWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsDetectsTypeMismatchesViaExplicitTypeHint" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="notSameNullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferentLengthDifferingAtStartMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="same" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalArraysDeclaredAsOneDimensionalAreEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="fails" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsSuppliesACoherentErrorMessageUponTypeMismatch" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="floatsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="intsEqualLongs" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsIncludesTheSpecifiedMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDifferentLengthDifferingAtEndMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="bigDecimalsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="twoDimensionalArraysDifferentInnerLengthNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalArraysAreNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsIgnoresDeltaOnNaN" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="stringNullAndNullWorksToo" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="doublesNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="twoDimensionalArraysDifferentOuterLengthNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysActualNullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsUsesNameUponTypeMismatchWithAnonymousClass" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="longsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullMessageDisappearsWithAssertEquals" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="multiDimensionalArraysAreNotEqualNoMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="sameObjectIsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsIgnoresFloatDeltaOnNaN" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="booleansNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsIncludesTheValueBeingTested" classname="org.junit.tests.assertion.AssertionTest" time="0.001"/>
+  <testcase name="assertThatDescriptionCanBeElided" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsWorksWithPrimitiveTypes" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullNullmessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="errorMessageDistinguishesDifferentValuesWithSameToString" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="stringsNotEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="sameWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsSuppliesTheSpecifiedMessageUponTypeMismatch" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullAndStringNullPrintCorrectError" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysDeclaredAsObjectAreComparedAsObjects" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="objectsNotSame" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullMessageDisappearsWithStringAssertEquals" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="naNsAreEqual" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsIncludesCorrectMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsConsidersFloatDeltaCorrectly" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="arraysExpectedNullMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsReturnsTheSameObjectThrown" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertThrowsUsesCanonicalNameWhenRequiredExceptionNotThrown" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="twoDimensionalArraysConvertedToStringCorrectly" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="notEqualsObjectWithNull" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="assertNotEqualsConsidersDeltaCorrectly" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="notEqualsObjectWithNullWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="notSame" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+  <testcase name="nullWithMessage" classname="org.junit.tests.assertion.AssertionTest" time="0"/>
+</testsuite>

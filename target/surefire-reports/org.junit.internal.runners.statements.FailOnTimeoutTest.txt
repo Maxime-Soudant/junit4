@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.junit.internal.runners.statements.FailOnTimeoutTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 0.687 sec - in org.junit.internal.runners.statements.FailOnTimeoutTest

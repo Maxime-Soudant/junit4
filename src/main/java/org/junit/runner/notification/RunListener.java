@@ -136,7 +136,7 @@ public class RunListener {
      * false
      *
      * @param failure describes the test that failed and the
-     * {@link org.junit.AssumptionViolatedException} that was thrown
+     * {@link org.junit.AssumptionViolatedExceptionJr} that was thrown
      */
     public void testAssumptionFailure(Failure failure) {
     }

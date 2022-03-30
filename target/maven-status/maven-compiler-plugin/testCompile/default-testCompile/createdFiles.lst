@@ -1,0 +1,17 @@
+org/junit/AssumptionViolatedExceptionTest$1.class
+junit/tests/SampleJUnit3Tests$1.class
+org/junit/runner/FilterOptionIntegrationTest$1.class
+org/junit/rules/TestRuleTest$1.class
+org/junit/runner/RequestTest$1.class
+org/junit/rules/RuleMemberValidatorTest$1.class
+org/junit/rules/TestWatchmanTest$1.class
+org/junit/tests/junit3compatibility/InitializationErrorForwardCompatibilityTest$1.class
+org/junit/rules/TestWatcherTest$1.class
+org/junit/rules/DisableOnDebugTest$1.class
+org/junit/internal/runners/statements/ExpectExceptionTest$1.class
+org/junit/runners/CustomBlockJUnit4ClassRunnerTest$1.class
+org/junit/runner/notification/RunNotifierTest$1.class
+org/junit/experimental/categories/CategoryFilterFactoryTest$1.class
+org/junit/tests/SampleJUnit4Tests$1.class
+org/junit/rules/ClassRulesTest$1.class
+org/junit/rules/MethodRulesTest$1.class

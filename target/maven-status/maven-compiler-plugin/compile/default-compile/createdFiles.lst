@@ -1,0 +1,12 @@
+org/junit/runner/Result$1.class
+org/junit/internal/runners/JUnit38ClassRunner$1.class
+org/junit/internal/runners/statements/FailOnTimeout$1.class
+org/junit/ComparisonFailure$1.class
+org/junit/experimental/max/MaxHistory$1.class
+org/junit/internal/runners/rules/RuleMemberValidator$1.class
+org/junit/validator/AnnotationsValidator$1.class
+org/junit/internal/requests/ClassRequest$1.class
+org/junit/runners/Parameterized$1.class
+org/junit/experimental/theories/internal/AllMembersSupplier$1.class
+org/junit/runners/parameterized/BlockJUnit4ClassRunnerWithParameters$1.class
+org/junit/rules/Stopwatch$1.class

@@ -93,7 +93,7 @@ public class ErrorCollector extends Verifier {
             error.initCause(e);
             addError(error);
             return null;
-        } catch (Throwable e) {
+        } catch (Exception e) {
             addError(e);
             return null;
         }

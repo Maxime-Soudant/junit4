@@ -49,31 +49,31 @@ public class AssumptionViolatedExceptionTest {
     @Theory
     public void toStringReportsMatcher(Integer actual, Matcher<Integer> matcher) {
         assumeThat(matcher, notNullValue());
-        assertThat(new AssumptionViolatedException(actual, matcher).toString(),
+        assertThat(new AssumptionViolatedExceptionJr(actual, matcher).toString(),
                 containsString(matcher.toString()));
     }
 
     @Theory
     public void toStringReportsValue(Integer actual, Matcher<Integer> matcher) {
-        assertThat(new AssumptionViolatedException(actual, matcher).toString(),
+        assertThat(new AssumptionViolatedExceptionJr(actual, matcher).toString(),
                 containsString(String.valueOf(actual)));
     }
 
     @Test
     public void assumptionViolatedExceptionWithMatcherDescribesItself() {
-        AssumptionViolatedException e = new AssumptionViolatedException(3, is(2));
+        AssumptionViolatedExceptionJr e = new AssumptionViolatedExceptionJr(3, is(2));
         assertThat(StringDescription.asString(e), is("got: <3>, expected: is <2>"));
     }
 
     @Test
     public void simpleAssumptionViolatedExceptionDescribesItself() {
-        AssumptionViolatedException e = new AssumptionViolatedException("not enough money");
+        AssumptionViolatedExceptionJr e = new AssumptionViolatedExceptionJr("not enough money");
         assertThat(StringDescription.asString(e), is("not enough money"));
     }
 
     @Test
     public void canInitCauseWithInstanceCreatedWithString() {
-      AssumptionViolatedException e = new AssumptionViolatedException("invalid number");
+      AssumptionViolatedExceptionJr e = new AssumptionViolatedExceptionJr("invalid number");
       Throwable cause = new RuntimeException("cause");
       e.initCause(cause);
       assertThat(e.getCause(), is(cause));
@@ -112,25 +112,25 @@ public class AssumptionViolatedExceptionTest {
     @Test
     public void canSetCauseWithInstanceCreatedWithExplicitThrowableConstructor() {
       Throwable cause = new Exception();
-      AssumptionViolatedException e = new AssumptionViolatedException("invalid number", cause);
+      AssumptionViolatedExceptionJr e = new AssumptionViolatedExceptionJr("invalid number", cause);
       assertThat(e.getCause(), is(cause));
     }
 
     @Test
     public void assumptionViolatedExceptionWithoutValueAndMatcherCanBeReserialized_v4_13()
             throws IOException, ClassNotFoundException {
-        assertReserializable(new AssumptionViolatedException(MESSAGE));
+        assertReserializable(new AssumptionViolatedExceptionJr(MESSAGE));
     }
 
     @Test
     public void assumptionViolatedExceptionWithValueAndMatcherCanBeReserialized_v4_13()
             throws IOException, ClassNotFoundException {
-        assertReserializable(new AssumptionViolatedException(MESSAGE, TWO, SERIALIZABLE_IS_THREE));
+        assertReserializable(new AssumptionViolatedExceptionJr(MESSAGE, TWO, SERIALIZABLE_IS_THREE));
     }
 
     @Test
     public void unserializableValueAndMatcherCanBeSerialized() throws IOException, ClassNotFoundException {
-        AssumptionViolatedException exception = new AssumptionViolatedException(MESSAGE,
+        AssumptionViolatedExceptionJr exception = new AssumptionViolatedExceptionJr(MESSAGE,
                 UNSERIALIZABLE_VALUE, UNSERIALIZABLE_MATCHER);
 
         assertCanBeSerialized(exception);
@@ -138,20 +138,20 @@ public class AssumptionViolatedExceptionTest {
 
     @Test
     public void nullValueAndMatcherCanBeSerialized() throws IOException, ClassNotFoundException {
-        AssumptionViolatedException exception = new AssumptionViolatedException(MESSAGE);
+        AssumptionViolatedExceptionJr exception = new AssumptionViolatedExceptionJr(MESSAGE);
 
         assertCanBeSerialized(exception);
     }
 
     @Test
     public void serializableValueAndMatcherCanBeSerialized() throws IOException, ClassNotFoundException {
-        AssumptionViolatedException exception = new AssumptionViolatedException(MESSAGE,
+        AssumptionViolatedExceptionJr exception = new AssumptionViolatedExceptionJr(MESSAGE,
                 TWO, SERIALIZABLE_IS_THREE);
 
         assertCanBeSerialized(exception);
     }
 
-    private void assertCanBeSerialized(AssumptionViolatedException exception)
+    private void assertCanBeSerialized(AssumptionViolatedExceptionJr exception)
             throws IOException, ClassNotFoundException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         ObjectOutputStream oos = new ObjectOutputStream(baos);
@@ -159,24 +159,24 @@ public class AssumptionViolatedExceptionTest {
 
         ByteArrayInputStream bais = new ByteArrayInputStream(baos.toByteArray());
         ObjectInputStream ois = new ObjectInputStream(bais);
-        AssumptionViolatedException fromStream = (AssumptionViolatedException) ois.readObject();
+        AssumptionViolatedExceptionJr fromStream = (AssumptionViolatedExceptionJr) ois.readObject();
 
         assertSerializedCorrectly(exception, fromStream);
     }
 
-    private void assertReserializable(AssumptionViolatedException expected)
+    private void assertReserializable(AssumptionViolatedExceptionJr expected)
             throws IOException, ClassNotFoundException {
         String resourceName = name.getMethodName();
         InputStream resource = getClass().getResourceAsStream(resourceName);
         assertNotNull("Could not read resource " + resourceName, resource);
         ObjectInputStream objectInputStream = new ObjectInputStream(resource);
-        AssumptionViolatedException fromStream = (AssumptionViolatedException) objectInputStream.readObject();
+        AssumptionViolatedExceptionJr fromStream = (AssumptionViolatedExceptionJr) objectInputStream.readObject();
 
         assertSerializedCorrectly(expected, fromStream);
     }
 
     private void assertSerializedCorrectly(
-            AssumptionViolatedException expected, AssumptionViolatedException fromStream) {
+            AssumptionViolatedExceptionJr expected, AssumptionViolatedExceptionJr fromStream) {
         assertNotNull(fromStream);
 
         // Exceptions don't implement equals() so we need to compare field by field

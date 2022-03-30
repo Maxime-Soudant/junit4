@@ -1,5 +1,8 @@
 package org.junit.runner;
 
+import static org.junit.Assert.assertEquals;
+import junit.runner.Version;
+
 import org.junit.Test;
 import org.junit.tests.TestSystem;
 
@@ -16,5 +19,12 @@ public class JUnitCoreTest {
 
         assertThat(result.getFailureCount(), is(1));
         assertThat(result.getFailures().get(0).getException(), instanceOf(IllegalArgumentException.class));
+    }
+    
+    @Test
+    public void getVersionTest() {
+        JUnitCore jUnitCore = new JUnitCore();
+
+        assertEquals(jUnitCore.getVersion(), Version.id());
     }
 }

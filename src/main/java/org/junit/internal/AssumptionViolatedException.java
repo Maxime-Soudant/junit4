@@ -29,7 +29,7 @@ public class AssumptionViolatedException extends RuntimeException implements Sel
     private final Matcher<?> fMatcher;
 
     /**
-     * @deprecated Please use {@link org.junit.AssumptionViolatedException} instead.
+     * @deprecated Please use {@link org.junit.AssumptionViolatedExceptionJr} instead.
      */
     @Deprecated
     public AssumptionViolatedException(String assumption, boolean hasValue, Object value, Matcher<?> matcher) {
@@ -47,7 +47,7 @@ public class AssumptionViolatedException extends RuntimeException implements Sel
      * An assumption exception with the given <i>value</i> (String or
      * Throwable) and an additional failing {@link Matcher}.
      *
-     * @deprecated Please use {@link org.junit.AssumptionViolatedException} instead.
+     * @deprecated Please use {@link org.junit.AssumptionViolatedExceptionJr} instead.
      */
     @Deprecated
     public AssumptionViolatedException(Object value, Matcher<?> matcher) {
@@ -58,7 +58,7 @@ public class AssumptionViolatedException extends RuntimeException implements Sel
      * An assumption exception with the given <i>value</i> (String or
      * Throwable) and an additional failing {@link Matcher}.
      *
-     * @deprecated Please use {@link org.junit.AssumptionViolatedException} instead.
+     * @deprecated Please use {@link org.junit.AssumptionViolatedExceptionJr} instead.
      */
     @Deprecated
     public AssumptionViolatedException(String assumption, Object value, Matcher<?> matcher) {
@@ -68,7 +68,7 @@ public class AssumptionViolatedException extends RuntimeException implements Sel
     /**
      * An assumption exception with the given message only.
      *
-     * @deprecated Please use {@link org.junit.AssumptionViolatedException} instead.
+     * @deprecated Please use {@link org.junit.AssumptionViolatedExceptionJr} instead.
      */
     @Deprecated
     public AssumptionViolatedException(String assumption) {
@@ -78,7 +78,7 @@ public class AssumptionViolatedException extends RuntimeException implements Sel
     /**
      * An assumption exception with the given message and a cause.
      *
-     * @deprecated Please use {@link org.junit.AssumptionViolatedException} instead.
+     * @deprecated Please use {@link org.junit.AssumptionViolatedExceptionJr} instead.
      */
     @Deprecated
     public AssumptionViolatedException(String assumption, Throwable e) {
